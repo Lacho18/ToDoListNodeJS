@@ -7,9 +7,82 @@ body {
     background-color: aquamarine;
 }
 
-h1 {
+#listSection {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: blueviolet;
+    width: 40%;
+    height: 80%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    position: relative;
+    font-size: 3.1vmax;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 7px solid cornflowerblue;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main > div > ul {
+    margin-left: 7%;
+    font-size: 1.4vmax;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.2vmax;
+}
+
+#AddButton {
+    position: absolute;
+    width: 15%;
+    height: 7%;
+    border: 1px solid black;
+    left: 100%;
+    top: 85%;   
+}
+
+button > img {
+    width: 100%;
+    height: 100%;
+}
+
+.taskButtons {
+    width: 7%;
+    height: 7%;
+    border-radius: 50%;
+}
+
+#done {
+    background-color: greenyellow;
+    margin-left: 35%;
+    margin-right: 7%;
+}
+
+#skiped {
+    background-color: red;
+}
+
+#menuButton {
+    width: 5%;
+    height: 10%;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    background-color: transparent;
 }

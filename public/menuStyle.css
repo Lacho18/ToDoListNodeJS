@@ -1,0 +1,36 @@
+#menuDiv {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 16%;
+    height: 30%;
+    display: inline-block;
+    background-color: brown;
+    margin: 3px;
+    background-color: rgb(203, 207, 207);
+    border-radius: 40px;
+}
+
+.menuButtons {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 80%;
+    margin: 5%;
+    height: 10%;
+    border-radius: 15px;
+    background-color: bisque;
+}
+
+.menuApearence {
+    animation: ease 2s menuApeare;
+}
+
+@keyframes menuApeare{
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 30%;
+    }
+}
