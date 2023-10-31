@@ -39,7 +39,7 @@ menuButton.addEventListener('click', () => {
         menuShown = true;
         setTimeout(() => {
             everyButton.forEach(indexValue => {indexValue.style.display = "inline-block";});
-        }, 2000);
+        }, 10);
     }
     else {
         menuDiv.style.display = 'none';
@@ -55,12 +55,15 @@ addingForm.addEventListener('submit', () => {
     bodyObject.task = taskContect.value;
     bodyObject.importance = parseInt(importanceContect.value);
 
-    fetch('/submit', {
-        method: 'POST',
-        body: bodyObject,
-    })
-    .then((response) => {response.text()})
-    .then((data) => {console.log(data)});
-
+    if(bodyObject != null && Object.keys(bodyObject).length !== 0) {
+        fetch('/submit', {
+            method: 'POST',
+            body: bodyObject,
+        })
+        .then((response) => {response.text()})
+        .then((data) => {console.log(data)});
+    
+    }
+    
     bodyObject = {};
 })
