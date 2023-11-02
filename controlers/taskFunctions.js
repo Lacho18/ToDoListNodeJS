@@ -4,7 +4,7 @@ const fsPromises = require('fs').promises;
 
 const tasksDB = {
     allTasks : require(path.join(__dirname, '..', 'data', 'tasks.json')),
-    setTasks : function(data) {this.allTasks = data}
+    setTasks : function(data) {this.allTasks = data}     
 }
 
 const addTask = async (task) => {
