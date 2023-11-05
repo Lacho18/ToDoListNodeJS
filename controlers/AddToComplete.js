@@ -6,7 +6,7 @@ const completedTasksDB = {
     setTasks : function(data) {this.allTasks = data}
 }
 
-async function addToCompleteList(task) {
+async function addToCompleteList(task) {                 
     if(task === null || task === "") return;
     if(Object.keys(task).length !== 0 && task !== null) {
         let newData = {
