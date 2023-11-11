@@ -3,7 +3,7 @@ const fsPromises = require('fs').promises;
 
 const completedTasksDB = {
     allTasks : require(path.join(__dirname, '..', 'data', 'completedTasks.json')),
-    setTasks : function(data) {this.allTasks = data}
+    setTasks : function(data) {this.allTasks = data}     
 }
 
 async function addToCompleteList(task) {                 
